@@ -1,0 +1,98 @@
+body {
+  margin: 0 auto;
+  display: block;
+  font-family: Caveat;
+  background: url("http://img.mota.ru/upload/wallpapers/source/2009/07/14/21/03/2255/3d_773.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron {
+  height: 350px;
+  width: 700px;
+  display: block;
+  margin-top: 100px;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5%;
+  background-color: black;
+}
+
+#quote {
+  font-size: 50px;
+  position: absolute;
+  color: white;
+}
+
+#actual-quote {
+  padding-left: 70px;
+  font-size: 30px;
+  
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  white-space: normal;
+  
+}
+
+#author {
+  position: fixed;
+  bottom:180px;
+  right:400px;
+  
+ 
+  font-size: 25px;
+  color: white;
+}
+
+a {
+  background-color: black;
+  position: relative;
+  bottom: -240px;
+  cursor: pointer;
+}
+
+#twitter {
+  color: black;
+  opacity: 0.6;
+  background-color: white;
+   position: fixed;
+  bottom: 120px;
+  
+}
+
+#twitter:hover {
+  opacity: 1;
+  color: #0066ff;
+}
+
+#new-quote {
+  float: right;
+  clear: none;
+  color: black;
+  opacity: 0.6;
+  background-color: white;
+  font-family: sans-serif;
+   position: fixed;
+  bottom: 120px;
+  right: 350px;
+}
+
+#new-quote:hover {
+  opacity: 1;
+  color: #0066ff;
+}
+a[class*="creator"]{font-size:27px;
+color:white;
+ 
+  font-family:sans;
+  position:relative;
+  bottom:0px;
+  text-decoration:none;
+  background-color:transparent;
+  
+}
+.creator:hover{
+  color:#0066ff;
+}
