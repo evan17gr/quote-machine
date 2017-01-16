@@ -38,7 +38,7 @@ body {
 
 #author {
   position: fixed;
-  bottom:180px;
+  bottom:250px;
   right:400px;
   
  
@@ -58,7 +58,7 @@ a {
   opacity: 0.6;
   background-color: white;
    position: fixed;
-  bottom: 120px;
+  bottom:200px;
   
 }
 
@@ -75,7 +75,7 @@ a {
   background-color: white;
   font-family: sans-serif;
    position: fixed;
-  bottom: 120px;
+  bottom: 200px;
   right: 350px;
 }
 
