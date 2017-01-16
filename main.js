@@ -35,11 +35,11 @@ document.getElementById("new-quote").onclick = fwork;
 var tweetQuote = '';
 function fwork() {
   randomBackground();
-  $.getJSON("http://quotes.stormconsultancy.co.uk/random.jsonO", function(data) {
+  $.getJSON("http://quotes.stormconsultancy.co.uk/random.json","jsonp", function(data) {
     $("#actual-quote").html('"' + data.quote + '"')
     $("#author").html("<p>&ndash;" + data.author + "<p>")
 
-  if (data.quoteAuthor) {
+  if (data.author) {
   $("#author").html("<p>&ndash;" + data.author + "</p>")
 } else {
   $("#author").html("<p>&ndash;"+"Unknown!"+ "</p>")
@@ -50,6 +50,6 @@ function fwork() {
 };
 
 $("#twitter").click(function(){
-  console.log(tweetQuote);
+  
     window.open('https://twitter.com/intent/tweet?text='+tweetQuote,'_blank');
   });
