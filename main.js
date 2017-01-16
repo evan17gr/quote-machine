@@ -35,16 +35,16 @@ document.getElementById("new-quote").onclick = fwork;
 var tweetQuote = '';
 function fwork() {
   randomBackground();
-  $.getJSON("http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?", function(data) {
-    $("#actual-quote").html('"' + data.quoteText + '"')
-    $("#author").html("<p>&ndash;" + data.quoteAuthor + "<p>")
+  $.getJSON("http://quotes.stormconsultancy.co.uk/random.jsonO", function(data) {
+    $("#actual-quote").html('"' + data.quote + '"')
+    $("#author").html("<p>&ndash;" + data.author + "<p>")
 
   if (data.quoteAuthor) {
-  $("#author").html("<p>&ndash;" + data.quoteAuthor + "</p>")
+  $("#author").html("<p>&ndash;" + data.author + "</p>")
 } else {
   $("#author").html("<p>&ndash;"+"Unknown!"+ "</p>")
 }
-    tweetQuote=data.quoteText+'-'+""+data.quoteAuthor;
+    tweetQuote=data.quote+'-'+""+data.author;
   });
 
 };
