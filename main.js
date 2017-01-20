@@ -31,11 +31,15 @@ function randomBackground() {
 }
 
 document.getElementById("new-quote").onclick = fwork;
-
+var client = new HttpClient();
+client.get("http://quotes.stormconsultancy.co.uk/random.json", function(response) {
+   
+});
 var tweetQuote = '';
 function fwork() {
   randomBackground();
-  $.getJSON("http://quotes.stormconsultancy.co.uk/random.json","jsonp", function(data) {
+ var client = new HttpClient();
+client.get("http://quotes.stormconsultancy.co.uk/random.json", function(data) {
     $("#actual-quote").html('"' + data.quote + '"')
     $("#author").html("<p>&ndash;" + data.author + "<p>")
 
