@@ -17,6 +17,7 @@ body {
   margin-left: auto;
   border-radius: 5%;
   background-color: black;
+  position:relative;
 }
 
 #quote {
@@ -57,8 +58,8 @@ a {
   color: black;
   opacity: 0.6;
   background-color: white;
-   position: fixed;
-  bottom:230px;
+   position: absolute;
+ 
   
 }
 
@@ -74,9 +75,7 @@ a {
   opacity: 0.6;
   background-color: white;
   font-family: sans-serif;
-   position: fixed;
-  bottom: 230px;
-  right: 350px;
+ position:absolute;
 }
 
 #new-quote:hover {
